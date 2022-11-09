@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');  
+ *{  
+   box-sizing: border-box;  
+ }  
+ body{  
+   margin: 0;  
+   font-family: "Poppins", sans-serif;  
+   background-color:rgb(248, 232, 238);  
+   display: flex;  
+   justify-content: center;  
+   align-items: center;  
+   min-height: 100vh;  
+   flex-direction: column;  
+ }  
+ h1{
+   width: 60vw;
+   text-align: center;
+   color: blue;
+   animation-name: move;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease;
+
+ }
+ label {
+   color: darkblue;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+  animation-timing-function: ease;
+
+}
+
+ input{  
+   padding: 1rem;  
+   border-radius: 25px;  
+   border: none;  
+   background-color: #fff;  
+   font-family: inherit;  
+   box-shadow: 0 4px 10px rgba(0,0,0,0.2);  
+   min-width: 300px;  
+   font-size: 1rem;  
+ }  
+ input:focus{  
+   outline: none;  
+ }  
+ .weather{  
+   text-align: center;  
+   font-size: 2rem ;  
+ }  
+ .weather h2{  
+   margin-bottom: 0;  
+   display: flex;  
+   align-items: center;  
+ }  
+ /* .weather img{  
+   transform: scale(2);  
+ } */  
+ @keyframes move{
+   0%{
+     
+     color:rgb(248, 200, 200);
+   }
+   50%{
+    /* text-align: center;*/
+     color: blueviolet;
+   }
+   75%{
+    /* text-align: right;*/
+     color: yellow;
+   }
+   100%{
+    /* text-align: center;*/
+     color: cyan;
+   }
+
+
+
+
+ }
